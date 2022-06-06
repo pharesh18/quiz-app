@@ -41,9 +41,8 @@
     transition: 0.4s ease;
 }
 
-/* .container form div select:focus + label */
 .container form div select:focus + label,
-.container form div select option:checked + label{
+.container form div select:valid + label{
     top: 0px;
     left: 40px;
     background-color: #fff;
@@ -56,20 +55,14 @@
 }
 
 .container form div input:focus + label,
-.container form div input:not(:placeholder-shown) + label{
+/* .container form div input:not(:placeholder-shown) + label */
+.container form div input:valid + label{
     top: 0px;
     left: 80px;
     background-color: #fff;
     padding: 0 2px;
     font-size: 14px;
 }
-
- /* .container form div input:focus::placeholder{
-    position: absolute;
-    top: -10px;
-    left: 50px;
-    z-index: 100;
-} */
 
 .container form button{
     width: 100%;
